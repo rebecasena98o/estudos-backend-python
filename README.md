@@ -23,5 +23,6 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
 
 📁 **estudos-backend-python**
  ┣ 📄 README.md
- ┣ 📄 01-fundamentos-python.md
+ ┣ 📄 01-backend-python.md
+ ┣ 📄 02-tipos_De_Dados.py
 
