@@ -73,7 +73,7 @@ else:
 ### 🔹 Modo Interativo
 - *O interpretador Python pode executar em modo que possibilite o desenvolvedor a escrever código e ver o resultado na hora - escrever e ver antes de códigos que o exibam no modo bruto.*
 
-```Inicialização
+```python
 - Chamando o interpretador (python)
 - executando o script com a flag -i (python -i app.py)
 ```
@@ -89,10 +89,10 @@ def saudacao(nome):
 
 ---
 
-### 🔹 Funções 
+### 🔹 Outras funções 
 **Dir**
-- Sem argumentos, retorna a lista de nomes no escopo local  atual. 
-- Com um argumento, retorna uma lista de atributos válidos para o objeto.
+- *Sem argumentos, retorna a lista de nomes no escopo local  atual.* 
+- *Com um argumento, retorna uma lista de atributos válidos para o objeto.*
 
 ```python
 dir()
@@ -100,7 +100,8 @@ dir(100)
 ```
 
 **Help**
-- Invoca o sistema de ajuda integrado. É possível fazer buscas em modo interativo ou informar por parâmetro qual o nome do módulo, função, classe, método ou variável.
+- *Invoca o sistema de ajuda integrado.* 
+- *É possível fazer buscas em modo interativo ou informar por parâmetro qual o nome do módulo, função, classe, método ou variável.*
 
 ```python
 help()
