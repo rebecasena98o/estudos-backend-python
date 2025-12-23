@@ -14,7 +14,6 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
 - VS Code
 - Git & GitHub
 - Markdown
-
 ---
 
 ## 📂 Estrutura do Repositório
@@ -27,5 +26,5 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
  ┣ 📄 03-variaveis_constantes.py
  ┣ 📄 04-print_Input.py
 ```
-
+---
 
