@@ -19,10 +19,13 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
 
 ## 📂 Estrutura do Repositório
 
-📁 **estudos-backend-python**
+```text
+📁 estudos-backend-python
  ┣ 📄 README.md
  ┣ 📄 01-backend-python.md
  ┣ 📄 02-tipos_De_Dados.py
  ┣ 📄 03-variaveis_constantes.py
  ┣ 📄 04-print_Input.py
+```
+
 
