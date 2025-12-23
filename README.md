@@ -28,6 +28,7 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
  ┣ 📄 02-tipos_De_Dados.py
  ┣ 📄 03-variaveis_constantes.py
  ┣ 📄 04-print_Input.py
+ ┣ 📄 05-operadores_Aritmeticos.py
 ```
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
