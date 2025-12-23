@@ -1,12 +1,14 @@
 # 📘 Estudos em Back-End Python
 
 Repositório dedicado às minhas anotações, exercícios e práticas desenvolvidas durante o **Bootcamp de Back-End Python da DIO**, com foco em fundamentos da linguagem, boas práticas e desenvolvimento de aplicações back-end.
----
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 🎯 Objetivo
 
 Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplos práticos e projetos desenvolvidos ao longo do bootcamp, além de servir como material de consulta futura.
----
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 🛠️ Tecnologias e Ferramentas
 
@@ -14,7 +16,8 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
 - VS Code
 - Git & GitHub
 - Markdown
----
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 📂 Estrutura do Repositório
 
@@ -26,5 +29,5 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
  ┣ 📄 03-variaveis_constantes.py
  ┣ 📄 04-print_Input.py
 ```
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
