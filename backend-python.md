@@ -115,6 +115,31 @@ print(10 / 2 * 4)
 >>> 20.0
 ```
 ---
+### 🔹 Operadores de comparação
+- *Comparar dois valores (A e B)*
+```python
+saldo = 450
+saque = 200
+
+print(saldo == saque)
+>>> False
+
+print(saldo != saque)
+>>> True
+
+print(saldo > saque)
+>>> True
+
+print(saldo >= saque)
+>>> True
+
+print(saldo < saque)
+>>> False
+
+print(saldo <= saque)
+>>> False
+```
+---
 
 ### 🔹 Condicionais
 ```python
