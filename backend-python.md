@@ -185,6 +185,60 @@ print(saldo)
 >>> 6400
 ```
 ---
+### 🔹 Operadores lógicos
+- *Utilizados em conjunto com os operadores de comparação, para montar uma expressão lógica*
+- *Quando um operador de comparação é utilizado, o resultado retornado é um booleano*
+```python
+saldo = 1000
+saque = 200
+limite = 100
+
+saldo >= saque
+>>> True
+
+saque <= limite
+>>> False
+
+#Operador E
+
+saldo >= saque and saque <= limite
+>>> False
+
+#Operador OU
+
+saldo >= saque or saque <= limite
+>>> True
+
+#Operador Negação
+contatos_emergencia = []
+
+not 1000 > 1500 #false
+>>> True 
+# um falso - True (inverso da verdade) no not
+
+not contatos_emergencia
+>>> True #inverso da verdade - lista vazia em pyhton é falso
+
+not "saque 1500;"
+>>> False #string com valor - verdadeira - tem valor
+
+not ""
+>>> True #String vazia - Falso - inverso
+
+#Parênteses
+
+saldo = 1000
+saque = 350
+limite = 200
+conta_especial = True
+
+saldo >= saque and saque <= limite or conta_especial and saldo >= saque
+>>> True
+
+(saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque )
+>>> True
+```
+---
 
 ### 🔹 Condicionais
 ```python
