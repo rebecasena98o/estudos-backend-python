@@ -1,4 +1,4 @@
-# 📘 Estudos em Back-End Python
+## 📘 Estudos em Back-End Python
 
 Repositório dedicado às minhas anotações, exercícios e práticas desenvolvidas durante o **Bootcamp de Back-End Python da DIO**, com foco em fundamentos da linguagem, boas práticas e desenvolvimento de aplicações back-end.
 
