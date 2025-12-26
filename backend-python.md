@@ -241,6 +241,22 @@ saldo >= saque and saque <= limite or conta_especial and saldo >= saque
 ---
 ### 🔹 Operadores de identidade
 - *Operadores utilizados para comparar se os dois objetos testados ocupam a mesma posição na memória*
+```python
+curso = "Curso de Python"
+nome_curso = curso
+saldo, limite = 200, 200
+
+#Operador is // obj A is obj B
+curso is nome_curso
+>>> True
+
+#ambos utilizam a mesma região de memória
+curso is not nome_curso
+>>> False
+
+saldo is limite
+>>> True
+```
 ---
 
 ### 🔹 Condicionais
