@@ -30,6 +30,9 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
  ┣ 📄 04-print_Input.py
  ┣ 📄 05-operadores_Aritmeticos.py
  ┣ 📄 06-operadores_Atribuicao.py
+ ┣ 📄 07-operadores_Logicos.py
+ ┣ 📄 08-operadores_Identidade.py
+ ┣ 📄 09-operadores_Associacao.py
 ```
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
