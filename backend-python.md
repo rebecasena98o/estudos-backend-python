@@ -275,6 +275,20 @@ saques = [1500, 100]
 >>> False
 ```
 ---
+### 🔹 Indentação e blocos
+- *Identar código é uma forma de manter o código fonte mais legível e manutenível (passível de ser mantido). Mas em Python ela exerce um segundo papel, através da ondentação o interpretador consegue determinar onde um bloco de comando inicia e onde ele termina*
+- *As linguagens de programação costumam utilizar caracteres ou palavras reservadas para terminar o início e fim do bloco. (chaves - Java e C)*
+- *Existe uma convenção em Python que define um novo bloco: a cada novo bloco adicionamos 4 novos espaços em branco por nível de identação*
+```python
+def sacar (self, valor: float) -> None: #início do bloco do método
+
+    if self.saldo >= valor: # início do bloco do if
+        self.saldo -= valor
+
+    #fim do bloco do if
+#fim do bloco do método
+```
+---
 
 ### 🔹 Condicionais
 ```python
