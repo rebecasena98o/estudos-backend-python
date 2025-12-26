@@ -258,6 +258,23 @@ saldo is limite
 >>> True
 ```
 ---
+### 🔹 Operadores de associação
+- *Utilizados para verificar se um objeto está presente em uma sequência*
+```python
+curso = "Curso de Python"
+frutas = ["laranja", "uva", "limão"]
+saques = [1500, 100]
+
+"Python" in curso
+>>> True
+
+"maça" not in Frutas
+>>> True
+
+200 in saques
+>>> False
+```
+---
 
 ### 🔹 Condicionais
 ```python
