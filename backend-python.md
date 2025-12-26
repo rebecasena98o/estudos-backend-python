@@ -239,6 +239,9 @@ saldo >= saque and saque <= limite or conta_especial and saldo >= saque
 >>> True
 ```
 ---
+### 🔹 Operadores de identidade
+- *Operadores utilizados para comparar se os dois objetos testados ocupam a mesma posição na memória*
+---
 
 ### 🔹 Condicionais
 ```python
