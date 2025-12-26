@@ -11,11 +11,26 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 🛠️ Tecnologias e Ferramentas
+```text
+┣ Python 🐍
+┣ VS Code
+┣ Git & GitHub
+┣ Markdown
+```
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-- Python 🐍
-- VS Code
-- Git & GitHub
-- Markdown
+# 📌 Como Executar os Projetos
+
+**1. Clone o repositório:**
+````
+git clone (https://github.com/rebecasena98o/estudos-backend-python.git)
+````
+
+**2. Acesse o arquivo do projeto desejado**
+
+````text
+Não é necessário instalar dependências.
+````
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -33,6 +48,24 @@ Consolidar o aprendizado em **Python Back-End**, documentando conceitos, exemplo
  ┣ 📄 07-operadores_Logicos.py
  ┣ 📄 08-operadores_Identidade.py
  ┣ 📄 09-operadores_Associacao.py
+ ┣ 📄 10-indentacao_Blocos.py
 ```
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+
+# 👩‍💻 Autora
+
+*Rebeca Sena*
+Estudante de Ciência da Computação | Desenvolvimento Web
+
+🔗 [![GitHub](https://img.shields.io/badge/GitHub-rebecasena98o-black?logo=github)](https://github.com/rebecasena98o)
+
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+
+# ⭐ Considerações Finais
+*Sinta-se à vontade para explorar os projetos e acompanhar minha evolução. Este repositório está em constante construção 🚀*
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
