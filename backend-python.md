@@ -93,10 +93,13 @@ print(2 ** 3)
 - *A ordem altera o valor final*
 (ex: x = 10 - 5 *2)
 - *Definições da ordem:*
-° *Parêntesis*
-° *Expoentes*
-° *Multiplicações e divisões (da esquerda para a direita)*
-° *Somas e subtrações (da esquerda para a direita)*
+> Parêntesis
+
+> Expoentes
+
+> Multiplicações e divisões (da esquerda para a direita)
+
+> Somas e subtrações (da esquerda para a direita)
 
 ```python
 print(10 - 5 * 2)
@@ -290,14 +293,87 @@ def sacar (self, valor: float) -> None: #início do bloco do método
 ```
 ---
 
-### 🔹 Condicionais
+### 🔹 Estruturas Condicionais
+- *Permitem o desvio de fluxo de controle, quando determinadas expressões lógicas são atendidas*
+
+#### 🔸 if
+- *Único desvio*
+- *O comando irá testar a expressão lógica, e em caso de retorno verdadeiro as ações presentes no bloco de código do if serão executadas*
+
 ```python
-if idade >= 18:
-    print("Maior de idade")
-else:
-    print("Menor de idade")
+saldo = 2000.0
+saque = float(input("Informe o valor do saque: "))
+
+if saldo >= saque:
+    print("Realizando saque!")
+
+if saldo < saque:
+    print("Saldo insuficiente!")    
 ```
 
+#### 🔸 if/else
+- *Dois desvios*
+- *Como sabemos se a expressão lógica testada no if for verdadeira, então o bloco de código do if será executado. Caso contrário o bloco de código do else será executado*
+
+```python
+saldo = 2000.0
+saque = float(input("Informe o valor do saque: "))
+
+if saldo >= saque:
+    print("Realizando saque!")
+
+else:
+    print("Saldo insuficiente!")    
+```
+
+#### 🔸if/elif/else
+- *Mais de dois desvios*
+- *O elif é composto por uma nova expressão lógica, que será testada e caso retorne verdadeiro o bloco de código do elif será executado*
+- *sem limite de elif - evite criar muitos - aumento de complexidade do código*
+
+```python
+opcao = int(input("Informe uma opção: [1] Sacar \n [2] Extrato: "))
+
+if opcao == 1:
+    valor = float(input("Informe a quantia para o saque: "))
+
+elif opcao == 2:
+    print("Exibindo o extrato...")    
+
+else:
+    print("Opção inválida!")    
+```
+
+#### 🔸if aninhado
+
+- *Podemos criar estruturas condicionais aninhadas, para isso basta adicionar estruturas if/elif/else dentro do bloco de código de estruturas if/elif/else*
+```python
+if conta_normal:
+    if saldo >= saque:
+        print("Saque realizado com sucesso!")
+    elif saque <= (saldo + cheque_especial):
+    print("Saque realizado com uso do cheque especial!")    
+elif conta_universitaria:
+    if saldo >= saque:
+        print("Saque realizado com sucesso!")
+    else:
+    print("Saldo insuficiente!")    
+```
+
+#### 🔸if ternário
+- *Permite escrever uma condição em uma única linha*
+- *Composto por três partes:*
+> retorno caso a expressão retorne verdadeiro
+
+> expressão lógica
+
+> retorno caso a expressão não seja atendida
+
+```python
+status = "Sucesso" if saldo >= saque else "Falha"
+
+print(f"{status} ao realizar o saque!")
+```
 ---
 ### 🔍 Curiosidades
 - *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
