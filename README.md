@@ -49,6 +49,12 @@ Não é necessário instalar dependências.
  ┣ 📄 08-operadores_Identidade.py
  ┣ 📄 09-operadores_Associacao.py
  ┣ 📄 10-indentacao_Blocos.py
+ ┣ 📄 11-estruturas_Condicionais.py
+ ┣ 📄 12-estruturas_Condicionais_aninhada.py
+ ┣ 📄 13-estruturas_Condicionais_ternaria.py
+ ┣ 📄 14-estrutura_Repeticao_for.py
+ ┣ 📄 15-estrutura_Repeticao_while.py
+ ┣ 📄 16-estrutura_Repeticao_break.py
 ```
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
