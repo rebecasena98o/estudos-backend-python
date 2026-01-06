@@ -29,6 +29,7 @@ print(f'Meu nome é {name} e eu tenho {age} ano(s) de idade')
 - *Nasce com um valor e permanece com ele até o final da execução do programa*
 - *imutável*
 - *Não existe uma palavra reservada em Python para informar ao interpretador que o valor é constante (usa-se a convenção, que diz ao porgramador se a variável é uma constante - letras maíusculas)*
+
 ```python
 ALTURA = 1.69
 ```
@@ -40,7 +41,7 @@ ALTURA = 1.69
 - *vêm predefinidos em uma linguagem de programação*
 - *Representação e manipulação de dados/informações no código*
 
-### 🔹Exemplos:
+##### 🔸 Exemplos:
 
 ```python
 idade = 20 (int)
@@ -58,6 +59,7 @@ this_city = {
 ---
 ### 🔹 Operadores Aritméticos
 - *Executam operações matemáticas, como adição, subtração com operandos, multiplicação, etc.*
+
 ```python
 # Adição
 print(1 + 1)
@@ -120,6 +122,7 @@ print(10 / 2 * 4)
 ---
 ### 🔹 Operadores de comparação
 - *Comparar dois valores (A e B)*
+
 ```python
 saldo = 450
 saque = 200
@@ -146,6 +149,7 @@ print(saldo <= saque)
 ### 🔹 Operadores de atribuição
 
 - *Utilizados para definir o valor inicial ou sobrescrever o valor de uma variável*
+
 ```python
 saldo = 500
 
@@ -191,6 +195,7 @@ print(saldo)
 ### 🔹 Operadores lógicos
 - *Utilizados em conjunto com os operadores de comparação, para montar uma expressão lógica*
 - *Quando um operador de comparação é utilizado, o resultado retornado é um booleano*
+
 ```python
 saldo = 1000
 saque = 200
@@ -244,6 +249,7 @@ saldo >= saque and saque <= limite or conta_especial and saldo >= saque
 ---
 ### 🔹 Operadores de identidade
 - *Operadores utilizados para comparar se os dois objetos testados ocupam a mesma posição na memória*
+
 ```python
 curso = "Curso de Python"
 nome_curso = curso
@@ -263,6 +269,7 @@ saldo is limite
 ---
 ### 🔹 Operadores de associação
 - *Utilizados para verificar se um objeto está presente em uma sequência*
+
 ```python
 curso = "Curso de Python"
 frutas = ["laranja", "uva", "limão"]
@@ -282,6 +289,7 @@ saques = [1500, 100]
 - *Identar código é uma forma de manter o código fonte mais legível e manutenível (passível de ser mantido). Mas em Python ela exerce um segundo papel, através da ondentação o interpretador consegue determinar onde um bloco de comando inicia e onde ele termina*
 - *As linguagens de programação costumam utilizar caracteres ou palavras reservadas para terminar o início e fim do bloco. (chaves - Java e C)*
 - *Existe uma convenção em Python que define um novo bloco: a cada novo bloco adicionamos 4 novos espaços em branco por nível de identação*
+
 ```python
 def sacar (self, valor: float) -> None: #início do bloco do método
 
@@ -347,6 +355,7 @@ else:
 #### 🔸if aninhado
 
 - *Podemos criar estruturas condicionais aninhadas, para isso basta adicionar estruturas if/elif/else dentro do bloco de código de estruturas if/elif/else*
+
 ```python
 if conta_normal:
     if saldo >= saque:
@@ -378,6 +387,7 @@ print(f"{status} ao realizar o saque!")
 ### 🔹 Estruturas de repetição
 - *Estruturas utilizadas para repetir um trecho de código em um determinado número de vezes*
 - *Esse número pode ser conhecido previamente ou determinado atráves de uma expressão lógica*
+
 ```python
 a = int(input("Informe um número inteiro: "))
 
@@ -390,6 +400,7 @@ repita 2 vezes:
 #### 🔸for
 - *Usado para percorrer um objeto iterável*
 - *Faz sentido usá-lo quando sabemos o número exato de vezes que nosso bloco de código deve ser executado ou queremos percorrer um objeto iterável*
+
 ```python
 texto = input("Informe um texto: ")
 VOGAIS = "AEIOU"
@@ -405,6 +416,7 @@ print() #Adiciona quebra de linha
 - *Se usarmos range(i,j) será produzido:*
 > i, i + 1, i + 2, i + 3, ..., j - 1
 - *Ela recebe 3 argumentos: stop(obrigatório), start(opcional) e step (opcional)*
+
 ```python
 #range(stop) -> range object
 # range(start, stop[, step]) -> range object
@@ -413,6 +425,7 @@ list(range(4))
 >>> [0, 1, 2, 3]   
 ```
 ##### 🔸 Range com for
+
 ```python
 for numero in range(0, 11):
     print(numero, end=" ")
@@ -430,6 +443,7 @@ for numero in range(0, 51, 5):
 #### 🔸While
 - *É usado para repetir um bloco de código várias vezes*
 - *quando não sabemos o número exato de vezes que nosso bloco de código deve ser executado*
+
 ```python
 opcao = -1
 
@@ -443,18 +457,6 @@ while opcao != 0:
 
 ```
 ---
-### 🔍 Curiosidades
-- *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
-
----
-### 🔹 Modo Interativo
-- *O interpretador Python pode executar em modo que possibilite o desenvolvedor a escrever código e ver o resultado na hora - escrever e ver antes de códigos que o exibam no modo bruto.*
-
-```python
-- Chamando o interpretador (python)
-- executando o script com a flag -i (python -i app.py)
-```
----
 
 ## 📌 Módulo 2 – Funções
 
@@ -465,15 +467,16 @@ def saudacao(nome):
 ```
 ---
 ### 🔹 Funções de entrada e saída
-**Input**
+##### 🔸 input
 - *A função builtin input é utilizada quando queremos ler dados de entrada padrão (teclado). Ela recebe um argumento do tipo string que é exibido para o usuário na saída padrão (tela). A função lê a entrada, converte para string e retorna o valor.*
 ```python
 nome = input("informe o seu nome: ")
 >>> informe o seu nome:
 ```
 
-**Print**
+##### 🔸 Print
 - *A função builtin print é utilizada quando queremos exibir dados na saída padrão (tela). Ela recebe um argumento obrigatório do tipo varargs de objetos (significa que ele pode receber qualquer número de referências de objetos - do zero a muitos argumentos) e 4 argumentos opcionais (sep, end, file e flush). Todos os objetos são convertidos para string, separados por sep e terminados por end. A string final é exibida para o usuário.*
+
 ```python
 nome = "Rebeca"
 sobrenome = "Sena"
@@ -493,7 +496,7 @@ print(nome, sobrenome, sep="#")
 ```
 ---
 ### 🔹 Outras funções 
-**Dir**
+##### 🔸 Dir
 - *Sem argumentos, retorna a lista de nomes no escopo local  atual.* 
 - *Com um argumento, retorna uma lista de atributos válidos para o objeto.*
 
@@ -502,7 +505,7 @@ dir()
 dir(100)
 ```
 
-**Help**
+##### 🔸 Help
 - *Invoca o sistema de ajuda integrado.* 
 - *É possível fazer buscas em modo interativo ou informar por parâmetro qual o nome do módulo, função, classe, método ou variável.*
 
@@ -580,6 +583,61 @@ print(int(idade))
 >>> 28
 ```
 ---
+## 📌 Módulo 4 – Manipulando Strings
+> *Métodos úteis para manipular objetos do tipo string, como interpolar valores de variáveis e entender como funciona o fatiamento*
+### 🔹Maiúscula, minúscula e título
 
-## 📌 Anotações importantes
-> Python usa indentação para definir blocos de código.
+```python
+curso = "pYtHoN"
+
+print(curso.upper())
+>>> PYTHON
+
+print(curso.lower())
+>>> python
+
+print(curso.title())
+>>> Python
+```
+### 🔹 Eliminando espaços em branco
+
+```python
+curso = "     Python"
+
+print(curso.strip())
+>>> "Python" #esquerda e direita
+
+print(curso.lstrip())
+>>> "Python " #esquerda
+
+print(curso.rstrip())
+>>> " Python" #direita
+```
+
+### 🔹 Junções e centralização
+
+```python
+curso = "Python"
+
+print(curso.center(10, "#"))
+>>> "##Python##" #2 no começo, 2 no fim, centralização
+
+print(".".join(curso))
+>>> "P.y.t.h.o.n" #letra a letra
+```
+##### 🔸
+
+---
+
+### 🔍 Curiosidades
+- *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
+
+---
+### 🔹 Modo Interativo
+- *O interpretador Python pode executar em modo que possibilite o desenvolvedor a escrever código e ver o resultado na hora - escrever e ver antes de códigos que o exibam no modo bruto.*
+
+```python
+- Chamando o interpretador (python)
+- executando o script com a flag -i (python -i app.py)
+```
+---
