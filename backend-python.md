@@ -625,8 +625,36 @@ print(curso.center(10, "#"))
 print(".".join(curso))
 >>> "P.y.t.h.o.n" #letra a letra
 ```
-##### 🔸
 
+### 🔹 Interpolação de variáveis
+- *Há três formas de interpolar variáveis em strings, a primeira é usando o sinal %, a segunda é utilizando o método format e a última é utilizando f strings* 
+
+
+##### 🔸Old style %
+```python
+nome = "Rebeca"
+idade = 25
+profissao = "Programadora"
+linguagem = "Python"
+
+print("Olá, me chamo %s. Eu tenho %d anos de idade, trabalho como %s e estou matriculado no curso de %s. " % (nome, idade, profissao, linguagem))
+
+>>> Olá, me chamo Rebeca. Eu tenho 25 anos de idade, trabalho com Programadora e estou matriculado no curso de Python
+```
+
+##### 🔸Método format
+
+```python
+nome = "Rebeca"
+idade = 25
+profissao = "Programadora"
+linguagem = "Python"
+
+print("Olá, me chamo {}. Eu tenho {} anos de idade, trabalho como {} e estou matriculado no curso de {}. " format (nome, idade, profissao, linguagem))
+
+>>> Olá, me chamo Rebeca. Eu tenho 25 anos de idade, trabalho com Programadora e estou matriculado no curso de Python
+```
+##### 🔸f-string
 ---
 
 ### 🔍 Curiosidades
