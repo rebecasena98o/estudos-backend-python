@@ -631,6 +631,9 @@ print(".".join(curso))
 
 
 ##### 🔸Old style %
+
+- *Não recomendada e seu uso em Python 3 é raro*
+
 ```python
 nome = "Rebeca"
 idade = 25
@@ -655,8 +658,18 @@ print("Olá, me chamo {}. Eu tenho {} anos de idade, trabalho como {} e estou ma
 >>> Olá, me chamo Rebeca. Eu tenho 25 anos de idade, trabalho com Programadora e estou matriculado no curso de Python
 ```
 ##### 🔸f-string
----
 
+```python
+PI = 3.14159
+
+print(f"Valor de PI: {PI:.2f}")
+>>> "Valor de PI: 3.14"
+
+print(f"Valor de PI: {PI:10.2f}")
+>>> "Valor de PI:         3.14"
+```
+---
+Rebsena98gamer
 ### 🔍 Curiosidades
 - *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
 
