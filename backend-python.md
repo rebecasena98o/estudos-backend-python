@@ -668,6 +668,31 @@ print(f"Valor de PI: {PI:.2f}")
 print(f"Valor de PI: {PI:10.2f}")
 >>> "Valor de PI:         3.14"
 ```
+### 🔹 Fatiamento de String
+- *É uma técnica utilizada para retornar substrings (partes da string original), informando inicio (start), fim (stop) e passo (step): [start: stop[,step]]*
+
+```python
+nome = "Izuku Midoryia de lima "
+nome[0]
+>>> "I"
+
+nome[:5]
+>>> "Guilherme"
+
+nome[13:]
+>>> "Izuku Midoryia"
+
+nome[10:16]
+>>> "Midoryia"
+
+nome[10:16:2]
+
+nome[:]
+>>> "Izuku Midoryia de lima "
+
+nome[::-1]
+>>> "Cópia invertida"
+```
 ---
 Rebsena98gamer
 ### 🔍 Curiosidades
