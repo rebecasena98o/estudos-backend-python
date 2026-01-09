@@ -693,8 +693,24 @@ nome[:]
 nome[::-1]
 >>> "Cópia invertida"
 ```
+
+### 🔹 String Múltiplas linhas
+- *São definidas informando 3 aspas simples ou duplas durante a atribuição.*
+- *Elas podem ocupar várias linhas do código, e todos os espaços em branco são incluídos na string final.*
+
+```python
+nome = "Ochaco Uraraka"
+
+mensagem = f"""
+Olá, meu nome é {nome},
+Eu estou aprendendo Python
+"""
+>>>
+Olá, meu nome é Ochaco Uraraka,
+Eu estou aprendendo Python
+```
 ---
-Rebsena98gamer
+
 ### 🔍 Curiosidades
 - *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
 
