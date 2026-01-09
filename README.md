@@ -55,6 +55,13 @@ Não é necessário instalar dependências.
  ┣ 📄 14-estrutura_Repeticao_for.py
  ┣ 📄 15-estrutura_Repeticao_while.py
  ┣ 📄 16-estrutura_Repeticao_break.py
+ ┣ 📄 17-String_1.py
+ ┣ 📄 18-String_2.py
+ ┣ 📄 19-String_3.py
+ ┣ 📄 20-String_4.py
+ ┣ 📄 21-declaracao_Listas.py
+ ┣ 📄 22-copy_Lista.py
+ ┣ 📄 23-extend_Listas.py
 ```
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
