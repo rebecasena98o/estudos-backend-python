@@ -830,10 +830,120 @@ for numero in numeros:
 numeros = [1, 30, 21, 2, 9, 65, 25]
 quadrado = [numero ** 2 for numero in numeros]    
 ```
+
+### 🔹 Métodos da classe list
+##### 🔸 Exemplos
+
+```python
+### [] append
+lista = []
+
+lista.append(1)
+lista.append("Python")
+lista.append([40, 30, 20])
+
+print(lista) #[1, "Python", [40, 30, 20]]
+
+### [].clear
+lista = [1, "Python", [40, 30, 20]]
+
+print(lista) #[1, "Python", [40, 30, 20]]
+
+lista.clear()
+
+print(lista) # []
+
+### [].copy
+lista = [1, "Python", [40, 30, 20]]
+
+lista.copy()
+
+print(lista) # [1, "Python", [40, 30, 20]]
+
+### [].count
+
+cores = ["vermelho", "azul", "verde", "azul"]
+
+cores.count("vermelho") # 1
+
+cores.count("azul") # 2
+
+cores.count("verde") # 1
+
+### [].extend
+
+linguagens = ["python", "js", "Java"]
+
+print(linguagens) # ["python", "js", "Java"]
+
+linguagens.extend(["HTML", "CSS"])
+
+print(linguagens) # ["python", "js", "Java", "HTML", "CSS"]
+
+### [].index
+
+linguagens = ["python", "js", "c", "Java", "csharp"]
+
+linguagens.index("Java") # 3
+linguagens("python") # 0
+
+### [].pop - estrutura de dados
+linguagens = ["python", "js", "c", "Java", "csharp"]
+
+linguagens.pop() # csharp
+linguagens.pop() # Java
+linguagens.pop() # c
+linguagens.pop(0) # python
+
+### [].remove
+linguagens = ["python", "js", "c", "Java", "csharp"]
+
+linguagens.remove("c")
+
+print(linguagens) # linguagens = ["python", "js", "Java", "csharp"]
+
+### [].reverse
+linguagens = ["python", "js", "c", "Java", "csharp"]
+
+linguagens.reverse()
+
+print(linguagens) # ["csharp", "Java", "c", "js", "python" ]
+
+### [].sort
+linguagens = ["python", "js", "c", "Java", "csharp"]
+linguagens.sort() # ["c", "csharp", "Java", "js", "python"]
+
+linguagens = ["python", "js", "c", "Java", "csharp"]
+linguagens.sort(reverse=True) 
+# ["python", "js", "Java", "csharp", "c"] 
+
+linguagens = ["python", "js", "c", "Java", "csharp"]
+linguagens.sort(key=lambda x: len(x))
+# ["c", "js", "Java", "python", "csharp"] 
+
+linguagens = ["python", "js", "c", "Java", "csharp"]
+linguagens.sort(key=lambda x: len(x), reverse=True)
+# ["python", "csharp", "Java", "js", "c"] 
+
+### len
+
+doces = ["pirulito", "sorvete", "chocolate", "surpresa de uva", "pizza"]
+
+len(doces) # 5
+
+### sorted
+linguagens = ["python", "js", "c", "Java", "csharp"]
+
+sorted(linguagens, key=lambda x: len(x)) #["c", "js", "Java", "python", "csharp"]
+
+sorted(linguagens, key=lambda x: len(x), reverse=True) #["python", "csharp", "Java", "js", "c"]
+
+```
 ---
 
 ### 🔍 Curiosidades
 - *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
+- *extend une*
 
 ---
 ### 🔹 Modo Interativo
