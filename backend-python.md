@@ -710,6 +710,127 @@ Olá, meu nome é Ochaco Uraraka,
 Eu estou aprendendo Python
 ```
 ---
+## 📌 Módulo 5 – Trabalhando com Listas
+> *Listas em Python podem armazenar de maneira sequencial qualquer tipo de objeto. Podemos criar listas utilizando o construtor **list**, a função range ou colocando valores separados por vírgula dentro de colchetes. Listas são objetos mutáveis, portanto podemos alterar seus valores após a criação.*
+
+##### 🔸 Exemplo
+
+```python
+frutas = ["laranja", "maçã", "uva"]
+
+frutas = []
+
+letras = list("python")
+
+numeros = list(range(10))
+
+carro = ["Ferrari", "F8", 4200000, 2020, 2900, "São Paulo", True]
+```
+
+### 🔹 Acesso direto
+- *A lista é uma sequência, portanto, podemos acessar seus dados utilizando índices. Contamos o índice de determinada sequência a partir do zero*
+
+##### 🔸Índices negativos
+- *Sequências suportam indexação negativa. Acontagem começa em -1*
+
+##### 🔸Listas aninhadas
+- *Listas podem armazenas todos os tipos de objetos Python, portanto, podemos ter listas que armazenam outras listas. Com isso, podemos criar estruturas bidimensionais (tabelas), e acessar informando os índices de linha e coluna*
+
+##### 🔸Fatiamento
+- *Além de acessar elementos diretamente, podemos extrair um conjunto de valores de uma sequência. Para isso, basta passar o índice inicial e/ou final para acessar o conjunto. Podemos ainda informar quantas posições o cursor deve "pular" no acesso*
+
+##### 🔸 Exemplos
+
+```python
+frutas = ["Maçã", "Laranja", "Uva", "Pera"]
+
+frutas[0] #Maçã
+frutas[2] #Uva
+
+### ìndices negativos
+
+colecaoYugioh = ["Monster Reborn", "Infinite Impermanence" , "Linkuriboh", "Droll & Lock Bird", "Solemn Warning" ]
+
+colecaoYugioh[-1] #Solemn Warning
+colecaoYugioh[-3] #Linkuriboh
+
+### Listas aninhadas
+
+matriz = [
+    [1, "a", 2],
+    ["b", 3, 4],
+    [6, 5, "c"]
+]
+
+matriz[0] # [1, "a", 2]
+matriz[0][0] #1
+matriz[0][-1] #2
+matriz[-1][-1] # "c"
+
+### Fatiamento
+
+lista = ["p", "i", "p", "o", "c", "a"]
+
+lista[2:] # ["p", "o", "c", "a"]
+lista[:2] # ["p", "i"]
+lista[1:3] # ["i", "p"]
+lista[0:3:2] # ["p", "p"]
+lista[::] # ["p", "i", "p", "o", "c", "a"]
+lista[::-1] # ["a", "c", "o", "p", "i", "p"]
+```
+
+### 🔹Iterar listas
+- *A forma mais comum para percorrer os dados de uma lista é utilizando o comando **for***
+
+```python
+carros = ["gol", "celta", "palio"]
+
+for carro in carros:
+    print(carro)
+```
+
+### 🔹Função enumerate
+- *Ás vezes é necessário saber qual o índice do objeto dentro do laço **for**. Para isso podemos usar esta função*
+
+```python
+carros = ["gol", "celta", "palio"]
+
+for indice, carro in enumerate(carros):
+    print(f"{indice}: {carro}")
+```
+
+### 🔹Compressão de listas
+- *A compressão de lista oferece uma sintaxe mais curta quando você deseja: criar uma nova lista com base nos valores de uma lista existente (filtro) ou gerar uma nova lista aplicando alguma modificação nos elementos de uma lista existente*
+
+```python
+### Filtro versão 1
+
+numeros = [1, 30, 21, 2, 9, 65, 34]
+pares = []
+
+for numero in numeros:
+    if numero % 2 == 0:
+        pares.append(numero)
+
+### Filtro versão 2
+
+numeros = [1, 30, 21, 2, 9, 65, 25]
+pares = [numero for numero in numeros if numero % 2 == 0]      
+
+### Modificando valores version 1
+
+numeros = [1, 30, 21, 2, 9, 65, 25]
+quadrado = []
+
+for numero in numeros:
+    quadrado.append(numero ** 2)
+
+### Modificando valores version 2
+
+numeros = [1, 30, 21, 2, 9, 65, 25]
+quadrado = [numero ** 2 for numero in numeros]    
+```
+---
 
 ### 🔍 Curiosidades
 - *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
