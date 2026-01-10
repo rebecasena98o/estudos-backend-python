@@ -995,6 +995,68 @@ frutas[0] #laranja
 frutas[2] #uva
 ```
 ---
+## 📌 Módulo 5 – Dicionários: Criação e acesso aos dados
+> É um conjunto não-ordenado de pares chave: valor, onde as chaves são únicas em uma dada instância do dicionário. Eles são delimitados por chaves: {}, e contém uma lista de pares chave: valor separada por vírgulas.
+
+##### 🔸 Exemplos
+```python
+pokedex = {"name" : "Pikachu", "tipo" : "Elétrico" }
+
+pokedex = dict(name="Pikachu", tipo="Elétrico")
+
+pokedex["telefone"] = "3333-1234"
+# {name : "Pikachu", "tipo" : "Elétrico", "telefone" : "3333-1234"}
+```
+
+### 🔹 Acesso
+
+##### 🔸 Exemplos
+
+```python
+fichaRPG = {"nome" : "Lina", "raça" : "paladino", "idade" : 25}
+
+fichaRPG["nome"] # Lina
+fichaRPG["raça"] # paladino
+fichaRPG["idade"] # 25
+
+fichaRPG["nome"] = "Alexa"
+fichaRPG["raça"] = "bardo"
+fichaRPG["idade"] = 35
+fichaRPG["arma"] = "adaga"
+
+print(fichaRPG) # {"nome" : "Alexa", "raça" : "bardo", "idade" : 35, "arma" : "adaga"}
+```
+
+### 🔹 Dicionários aninhados
+- *Podem armazenar qualquer tipo de objeto Python como valor, desde que a chave para esse valor seja um objeto imutável como: strings e números*
+
+
+##### 🔸 Exemplos
+
+```python
+contatos = {
+"guilherme@gmail.com": {"nome": "Guilherme", "telefone": "3333-2221"},
+"giovanna@gmail.com": {"nome": "Giovanna", "telefone": "3443-2121"},
+"chappie@gmail.com": {"nome": "Chappie", "telefone": "3344-9871"},
+"melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},
+}
+contatos["giovanna@gmail.com"] ["telefone"]
+# "3443-2121"
+```
+
+### 🔹 Iterar dicionários
+- *A forma mais comum para percorrer os dados de um dicionários é utilizando o comando **for***
+
+##### 🔸 Exemplos
+
+```python
+for chave in contatos:
+    print(chave, contatos[chave])
+
+for chave, valor in contatos.items():
+    print(chave, valor)    
+```
+---
 
 ### 🔍 Curiosidades
 - *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
