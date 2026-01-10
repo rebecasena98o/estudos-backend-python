@@ -940,6 +940,61 @@ sorted(linguagens, key=lambda x: len(x), reverse=True) #["python", "csharp", "Ja
 
 ```
 ---
+## 📌 Módulo 6 – Conhecendo tuplas
+> São estruturas de dados muito parecidas com as listas, a principal diferença é que tuplas são imutáveis, enquanto listas são mutáveis. Podemos criar tuplas através da classe **tuple**, ou colocando valores separados por vírgula de parenteses.
+
+##### 🔸 Exemplos
+
+```python
+frutas = ("laranja", "pera", "uva",)
+
+letras = tuple("python")
+
+numeros = tuple([1, 2, 3, 4])
+
+pais = ("Brasil",)
+```
+
+### 🔹 Índices negativos
+- *Sequências suportam indexação negativa. A contagem começa em -1*
+
+##### 🔸 Exemplos
+```python
+frutas = ("laranja", "pera", "uva",)
+
+frutas[-1] #uva
+frutas[-2] #pera
+```
+
+### 🔹 Tuplas aninhadas
+- *Tuplas podem armazenar todos os tipos de objetos Python, portanto, podemos ter tuplas que armazenam outras tuplas. Com isso, podemos criar estruturas bidimensionais (tabelas), e acessar informando os índices de linha e coluna*
+
+##### 🔸 Exemplos
+
+```python
+matriz = [
+    [1, "a", 2],
+    ["b", 3, 4],
+    [6, 5, "c"]
+]
+
+matriz[0] # [1, "a", 2]
+matriz[0][0] #1
+matriz[0][-1] #2
+matriz[-1][-1] # "c"
+```
+
+### 🔹 Acesso direto
+- *A tupla é uma sequência, portanto, podemos acessar seus dados utilizando índices. Contamos o índice de determinada sequÊncia a partir do zero*
+
+##### 🔸 Exemplos
+```python
+frutas = ("laranja", "pera", "uva",)
+
+frutas[0] #laranja
+frutas[2] #uva
+```
+---
 
 ### 🔍 Curiosidades
 - *Booleano: implementado pela classe bool. Em Python, o tipo booleano é uma subclasse de int, uma vez que qualquer número diferente de 0 representa verdadeiro e 0 representa falso.*
